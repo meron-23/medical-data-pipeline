@@ -1,0 +1,14 @@
+telethon
+sqlalchemy
+psycopg2-binary
+python-dotenv
+dbt-core
+dbt-postgres
+fastapi
+uvicorn
+pandas
+yolov5  # or ultralytics if using that fork
+opencv-python
+aiofiles
+dbt-core 
+dbt-postgres
