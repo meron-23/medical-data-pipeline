@@ -44,3 +44,7 @@ docker-compose.override.yml
 *.tar.gz
 *.tar
 *.rar
+*.pt
+
+*.jpg
+*.png
