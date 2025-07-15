@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: fct_image_detections
+    description: >
+      Contains object detection results from YOLOv8 applied to images shared in Telegram messages.
+    columns:
+      - name: id
+        description: Unique ID for each detection
+        tests:
+          - unique
+          - not_null
+
+      - name: message_id
+        description: Foreign key to fct_messages
+        tests:
+          - not_null
+
+      - name: detected_class
+        description: Class of the detected object (e.g., pill, bottle)
+        tests:
+          - not_null
+
+      - name: confidence_score
+        description: Model confidence score for detection
