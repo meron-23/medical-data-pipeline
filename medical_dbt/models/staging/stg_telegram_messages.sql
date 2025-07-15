@@ -6,7 +6,7 @@ with raw as (
 select
     message_id,
     channel as channel_name,
-    date:timestamp as message_date,
+    date as message_date,
     text,
     has_media,
     length(text) as message_length
